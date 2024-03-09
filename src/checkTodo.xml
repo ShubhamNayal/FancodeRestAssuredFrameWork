@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="mobile-automation-framework">
+    <parameter name="os" value="android"/>
+    <parameter name="executionType" value="local"/>
+    <parameter name="threadCount" value="1"/>
+    <parameter name="location" value="us"/>
+
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+
+
+    <test name="automation-tests">
+        <classes>
+            <class name="tests.UserTest"/>
+        </classes>
+    </test>
+</suite>
